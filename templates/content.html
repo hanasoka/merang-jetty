@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="text-center mt-2 mb-4">
+    {{name}}
+  </h1>
+  <div class="row" style="margin-bottom:16px"> 
+    <div class="col-md-6">
+  <p class="lead">
+    About:
+    Transitioning from a non-tech background to the helm of a tech startup, I've embarked on an exhilarating journey of innovation and problem-solving. My passion for navigating the waters of entrepreneurship led me to learn coding, driven by a desire to tackle challenges within my boat booking startup. Leveraging Python and Flask, I craft digital solutions that streamline processes and enhance user experiences. Join me as I chart new courses and harness the power of technology to revolutionize the marine tourism industry, one code at a time. 🚀⛵️💻⚓
+  </p>
+    </div>
+    <div class="d-none d-md-block col-6">
+  <img src="{{ url_for('static', filename='beach.jpg') }}" style="height:320px; border-radius:4px">
+    </div>
+  <h2 class="text-center mt-2 mb-4">Tickets</h2>
+  <div>
+    {% for ticket in tickets %}
+      {% include 'ticketitem.html'%}
+    {% endfor %}
+  </div>
+  <div class="text-center">
+    <a href="mailto:han747sp@gmail.com?subject=Inquiry&body=Name%3A%20%3CYour%20name%20here%3E%0D%0ATravel%20Date%3A%20%3CEnter%20your%20travel%20date%3E%0D%0ANumber%20of%20Adult%3A%20%3CPerson%20above%20age%2012%3E%0D%0ANumber%20of%20Child%3A%20%3CPerson%204-12%20years%20old%3E%0D%0ANumber%20of%20Infant%3A%3CPerson%20age%200-4%20years%20old%3E" class="btn btn-primary btn-lg">Hello Me</a> 
+  </div>
+  </div>
+</div>
