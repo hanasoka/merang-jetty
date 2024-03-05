@@ -5,21 +5,29 @@
   <div class="row" style="margin-bottom:16px"> 
     <div class="col-md-6">
   <p class="lead">
-    About:
-    Transitioning from a non-tech background to the helm of a tech startup, I've embarked on an exhilarating journey of innovation and problem-solving. My passion for navigating the waters of entrepreneurship led me to learn coding, driven by a desire to tackle challenges within my boat booking startup. Leveraging Python and Flask, I craft digital solutions that streamline processes and enhance user experiences. Join me as I chart new courses and harness the power of technology to revolutionize the marine tourism industry, one code at a time. 🚀⛵️💻⚓
+    About Us 
+
+    Welcome to our website! We are dedicated to providing convenient and reliable transportation services to some of the most beautiful islands in Malaysia. Whether you're planning a getaway to Redang Island or Lang Tengah Island, we've got you covered with our seamless speedboat transfers. Explore our range of tickets below and choose the perfect option for your island adventure. 
   </p>
     </div>
     <div class="d-none d-md-block col-6">
-  <img src="{{ url_for('static', filename='beach.jpg') }}" style="height:320px; border-radius:4px">
+  
+      <p class="lead">
+        关于我们
+        欢迎来到我们的网站！我们致力于为您提供便捷可靠的交通服务，前往马来西亚一些最美丽的岛屿。无论您是计划前往热浪岛还是浪中岛度假，我们都为您提供了无缝的快艇转运服务。请在下面浏览我们的各种船票，并选择适合您岛屿冒险的完美选择.
+      </p>
     </div>
-  <h2 class="text-center mt-2 mb-4">Tickets</h2>
+  <h2 class="text-center mt-2 mb-4">Our Tickets / 我们的船票</h2>
   <div>
     {% for ticket in tickets %}
       {% include 'ticketitem.html'%}
     {% endfor %}
   </div>
   <div class="text-center">
-    <a href="mailto:han747sp@gmail.com?subject=Inquiry&body=Name%3A%20%3CYour%20name%20here%3E%0D%0ATravel%20Date%3A%20%3CEnter%20your%20travel%20date%3E%0D%0ANumber%20of%20Adult%3A%20%3CPerson%20above%20age%2012%3E%0D%0ANumber%20of%20Child%3A%20%3CPerson%204-12%20years%20old%3E%0D%0ANumber%20of%20Infant%3A%3CPerson%20age%200-4%20years%20old%3E" class="btn btn-primary btn-lg">Hello Me</a> 
+    <a href="https://wa.me/60179844072?text=I'm%20interested%20in%20boat%20ticket%20to%20Redang%20Island" class="btn btn-primary btn-lg">Whatsapp</a> 
+    <a href="mailto:traiseatrip@gmail.com?subject=Inquiry&body=Name%3A%20%3CYour%20name%20here%3E%0D%0ATravel%20Date%3A%20%3CEnter%20your%20travel%20date%3E%0D%0ANumber%20of%20Adult%3A%20%3CPerson%20above%20age%2012%3E%0D%0ANumber%20of%20Child%3A%20%3CPerson%204-12%20years%20old%3E%0D%0ANumber%20of%20Infant%3A%3CPerson%20age%200-4%20years%20old%3E" class="btn btn-primary btn-lg">Email</a> 
+    <a href="tel:+60179844072" class="btn btn-primary btn-lg">Call</a> 
   </div>
   </div>
+  <p class="text-center text-body-secondary">&copy; 2024 Merang Jetty</p>
 </div>

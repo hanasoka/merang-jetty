@@ -5,26 +5,27 @@ app = Flask(__name__)
 TICKETS = [
   {
     "id": 1,
-    "title": "From Non-Tech to Tech",
-    "category": "Personal Development",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    "title": "Redang Island ",
+    "price": "MYR 110.00",
+    "content": "Return Speedboat Transfer Merang - Redang Island - Merang"
   },
   {
     "id": 2,
-    "title": "Why I Learn to Code?",
-    "category": "Programming",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    "title": "Lang Tengah Island",
+    "price": "MYR 160.00",
+    "content": "Return Speedboat Transfer Merang - Lang Tengah Island - Merang"
   },
   {
     "id": 3,
-    "title": "What Causes Monsoon?",
-    "category": "Curiosity Chronicles",
+    "title": "热浪岛船票",
+    "price": "马币 110.00",
+    "content": "往返默浪码头 - 热浪岛船票"
   },
   {
     "id": 4,
-    "title": "Lang Tengah Island",
-    "category": "Projects",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    "title": "浪中岛船票",
+    "price": "马币 160.00",
+    "content": "往返默浪码头 - 浪中岛船票"
   } 
 ]
 
