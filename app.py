@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
@@ -32,6 +32,25 @@ TICKETS = [
 @app.route("/")
 def hello_world():
     return render_template('home.html', tickets=TICKETS, name="Merang Jetty Boat Services")
+
+@app.route("/ticket/<id>/book", methods=["post"])
+def book_ticket(id):
+    full_name = request.form.get("full_name")
+    phone = request.form.get("phone")
+    email = request.form.get("email")
+    hotel = request.form.get("hotel")
+    boat_in = request.form.get("boat_in")
+    boat_out = request.form.get("boat_out")
+    adult = request.form.get("adult")
+    child = request.form.get("child")
+    infant = request.form.get("infant")
+    return jsonify(full_name=full_name, phone=phone, email=email, hotel=hotel, boat_in=boat_in, boat_out=boat_out, adult=adult, child=child, infant=infant)
+  
+  
+    
+
+
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
